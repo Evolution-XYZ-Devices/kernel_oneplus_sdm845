@@ -1455,8 +1455,8 @@ static void gesture_judge(struct synaptics_ts_data *ts)
 		case VEE_DETECT:
 			gesture = (gesture_buffer[2] == 0x01) ? GESTURE_UP_ARROW  :
 				(gesture_buffer[2] == 0x02) ? GESTURE_DOWN_ARROW    :
-				(gesture_buffer[2] == 0x04) ? GESTURE_LEFT_ARROW :
-				(gesture_buffer[2] == 0x08) ? GESTURE_RIGHT_ARROW  :
+				(gesture_buffer[2] == 0x04) ? GESTURE_RIGHT_ARROW :
+				(gesture_buffer[2] == 0x08) ? GESTURE_LEFT_ARROW  :
 				GESTURE_NONE;
 			break;
 		case FINGER_DOWN:
